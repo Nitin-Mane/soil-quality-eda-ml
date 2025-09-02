@@ -1,0 +1,4 @@
+Nutrient,Mean_Value,Target_for_Rice,%_of_Target,Scope
+Nitrogen,77.86473165388828,90.0,86.51636850432031,rows where Crop_Type is rice
+Phosphorous,59.87513691128149,40.0,149.6878422782037,rows where Crop_Type is rice
+Potassium,43.8855421686747,40.0,109.71385542168674,rows where Crop_Type is rice

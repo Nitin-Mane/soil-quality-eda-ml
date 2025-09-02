@@ -1,0 +1,13 @@
+Feature,Coefficient
+num__N,6852653851111.745
+num__P,-9940757325548.176
+num__K,2724873798358.259
+num__Soil_pH,118498092877.62006
+num__Temperature,6.4197474749467585
+num__Humidity,8.774672285147323
+num__Wind_Speed,0.10065632203404247
+cat__Soil_Type_clay,121076497865.7345
+cat__Soil_Type_loamy,322428034839.9019
+cat__Soil_Type_peaty,94462037423.7169
+cat__Soil_Type_saline,88441911855.74565
+cat__Soil_Type_sandy,-169148608765.58035
