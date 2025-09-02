@@ -13,6 +13,6 @@ This repository provides **data cleaning, exploratory data analysis (EDA), and m
 ## ⚙️ Installation
 Clone the repo and install dependencies:
 ```bash
-git clone https://github.com/YOUR_USERNAME/soil-quality-eda-ml.git
+git clone https://github.com/Nitin-Mane/soil-quality-eda-ml.git
 cd soil-quality-eda-ml
 pip install -r requirements.txt
