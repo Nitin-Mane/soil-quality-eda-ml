@@ -16,8 +16,11 @@ Clone the repo and install dependencies:
 git clone https://github.com/YOUR_USERNAME/soil-quality-eda-ml.git
 cd soil-quality-eda-ml
 pip install -r requirements.txt
-Dependencies:
 
+'''
+
+Dependencies:
+'''
 Python 3.9+
 
 pandas, numpy, matplotlib
@@ -27,7 +30,7 @@ scikit-learn
 xgboost (optional)
 
 lightgbm (optional)
-
+'''
 ▶️ Usage
 Place your raw dataset in data/crop_yield_dataset.csv.
 
