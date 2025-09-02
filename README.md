@@ -1,6 +1,3 @@
-Here’s the **README.md** script you can copy straight into your repo:
-
-```markdown
 # 🌱 Soil Quality EDA & Machine Learning for Rice
 
 This repository provides **data cleaning, exploratory data analysis (EDA), and machine learning pipelines** for soil nutrient datasets, with a focus on **rice cultivation**.
@@ -30,7 +27,7 @@ soil-quality-eda-ml/
 ├── README.md                           # project overview
 └── LICENSE (optional)
 
-````
+```
 
 ---
 
