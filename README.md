@@ -87,10 +87,10 @@ Dependencies include:
 
 ## 📜 License
 
-MIT License (or add your preferred license)
+MIT License
 
 ---
 
-✨ Maintained by [Your Name](https://github.com/Nitin-Mane)
+✨ Maintained by [Nitin-Mane](https://github.com/Nitin-Mane)
 
 ```
