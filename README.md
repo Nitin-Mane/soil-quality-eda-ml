@@ -1,70 +1,99 @@
+Here’s the **README.md** script you can copy straight into your repo:
+
+```markdown
 # 🌱 Soil Quality EDA & Machine Learning for Rice
 
 This repository provides **data cleaning, exploratory data analysis (EDA), and machine learning pipelines** for soil nutrient datasets, with a focus on **rice cultivation**.
 
-## 📂 Contents
-- `notebooks/Data_Cleaning_Soil.ipynb`  
-  → Cleans the raw dataset (`crop_yield_dataset.csv`): handles missing values, outliers, plausibility checks, imputations, and saves a cleaned CSV + cleaning report.
-- `notebooks/Soil_EDA_ML_Rice.ipynb`  
-  → Performs EDA (correlation heatmaps, distributions) and trains ML models (Linear Regression, Random Forest, XGBoost/LightGBM if available) to predict `Crop_Yield`.
-- `outputs/`  
-  → Stores all cleaned files, plots, and metrics (auto-generated).
+---
+
+## 📂 Repository Structure
+```
+
+soil-quality-eda-ml/
+│
+├── notebooks/
+│   ├── Data\_Cleaning\_Soil.ipynb        # full data cleaning workflow
+│   ├── Soil\_EDA\_ML\_Rice.ipynb          # rice-focused EDA + ML analysis
+│
+├── outputs/                            # generated plots & cleaned files
+│   ├── crop\_yield\_dataset.cleaned.csv
+│   ├── cleaning\_report.json
+│   ├── missing\_before.png
+│   ├── missing\_after.png
+│   └── dist\_clean\_\*.png
+│
+├── data/
+│   └── crop\_yield\_dataset.csv          # raw dataset (optional, or .gitignore)
+│
+├── requirements.txt                    # Python dependencies
+├── README.md                           # project overview
+└── LICENSE (optional)
+
+````
+
+---
 
 ## ⚙️ Installation
 Clone the repo and install dependencies:
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/soil-quality-eda-ml.git
+git clone https://github.com/Nitin-Mane/soil-quality-eda-ml.git
 cd soil-quality-eda-ml
 pip install -r requirements.txt
+````
 
-'''
+Dependencies include:
 
-Dependencies:
-'''
-Python 3.9+
+* `numpy`, `pandas`, `matplotlib`, `scikit-learn`
+* `xgboost` & `lightgbm` (optional for advanced models)
+* `jupyterlab` for running notebooks
 
-pandas, numpy, matplotlib
+---
 
-scikit-learn
+## ▶️ Usage
 
-xgboost (optional)
+1. Place your raw dataset in `data/crop_yield_dataset.csv`.
+2. Run the cleaning notebook:
 
-lightgbm (optional)
-'''
-▶️ Usage
-Place your raw dataset in data/crop_yield_dataset.csv.
+   * `notebooks/Data_Cleaning_Soil.ipynb`
+3. Use the cleaned file (`outputs/crop_yield_dataset.cleaned.csv`) for analysis:
 
-Run the cleaning notebook:
+   * `notebooks/Soil_EDA_ML_Rice.ipynb`
 
-notebooks/Data_Cleaning_Soil.ipynb
+---
 
-Use the cleaned data (outputs/crop_yield_dataset.cleaned.csv) for modeling:
+## 📊 Features
 
-notebooks/Soil_EDA_ML_Rice.ipynb
+* Handles **missing values** with median/mode imputation
+* Removes **duplicates** and fixes **out-of-range values** (e.g., pH, humidity)
+* Detects & optionally clips **outliers** (IQR winsorization)
+* Generates **summary statistics, correlation heatmaps, distributions**
+* Trains and compares **ML models**:
 
-📊 Features
-Handles missing values (median/mode imputation).
+  * Linear Regression
+  * Random Forest (default & tuned via CV)
+  * XGBoost / LightGBM (if installed)
+* Stratified comparisons by **Soil\_Type** and **pH\_bin**
 
-Removes duplicates and corrects out-of-range values (e.g., pH, humidity).
+---
 
-Detects and optionally clips outliers via IQR winsorization.
+## 📈 Example Outputs
 
-Generates summary statistics, correlation heatmaps, and distributions.
+* Nutrient % vs rice target bar chart
+* Missingness plots (before/after cleaning)
+* Distribution plots (pH, N, P, K, Yield)
+* Correlation heatmap
+* Per-soil-type and per-pH\_bin model performance
 
-Trains baseline and tuned models (Random Forest, Linear Regression, optional XGBoost/LightGBM).
+---
 
-Provides per-Soil_Type and per-pH_bin model comparisons.
+## 📜 License
 
-📈 Example Plots
-Correlation heatmap
-
-Nutrient % vs rice target
-
-Distribution of soil pH, N, P, K
-
-Per-soil-type model performance
-
-📜 License
 MIT License (or add your preferred license)
 
-✨ Maintained by Nitin Mane
+---
+
+✨ Maintained by [Your Name](https://github.com/Nitin-Mane)
+
+```
